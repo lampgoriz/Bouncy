@@ -214,6 +214,10 @@ h2{
     position: relative;
     top: -40px;
 }
+.portfolio{
+    background-color: #f3f3f3;
+    padding-bottom: 100px;
+}
 .portfolio__menu-item{
     padding: 75px 15px;
 }
@@ -228,54 +232,96 @@ h2{
     text-decoration: none;
     border-bottom: 1px solid #19bd9a;
 }
+.gallery__item{
+    padding-bottom: 10px;   
+}
+img{
+    max-width: 100%;
+}
+.gallery__item-big{
+    background-image: url(img/gallery_whitePackage.png);
+    height: 340px;
+}
+.gallery__item-sm{
+    background-image: url(img/gallery_whitePackage.png);
+    height: 240px;
+}
 
 
+
+/*position: absolut
+left: 0
+rigth:0
+top: 0
+bottom:0 */
 /*
-.head{
-    background-color: yellow;
-    
-    color: white;
-    background-image: url(img/Layer%201.png);
-    background-size: cover;
+.gallery__item:hover{
 
-    min-height: 100vh;  
-    height: 100%;
-    margin-left: -px;
 }
-.head__logo{
-    font-family: Open Sans;
-    font-weight: bold;
-    font-size: 19px;
-}
-a{
+*/
+.portfolio__footer{
+    background-image: url(img/portfolioFooter.png);
+    background-size: cover;
+    height: 200px;
+    margin-top: 40px;
+    width: 100%;
     color: white;
-    text-decoration: none;
 }
-a:hover{
-    color: white;
-    text-decoration: none;
+.portfolio__footer-text{
+    padding-top: 55px;
 }
-.head__menu a{
-    border: 1px solid transparent;
-    border-radius: 12px;
-    padding: 5px 15xp;
+.porfolio__button{
+    padding-top: 40px;
 }
-.head__menu a:hover{
-    border: 1px solid #fff;
-    border-radius: 12px;
+.our__team-body{
+    padding-top: 60px;
 }
-.head__menu ul{
-    list-style: none;
+.our__team-sliderButton{
+    padding-top: 60px;
+    padding-left: 10px;
 }
-.head__menu__item{
-    margin-right: 42px;
-}
-.head__titl-h1{
+.post{
+    font-size: 14px;
     font-family: Source Sans Pro;
-    font-size: 23px;
-    
+    font-style: italic;    
 }
-.head__title-h3{
-    font-family: Open Sans;
-    font-size: 12px;
-}*/
+.unit{
+    text-align: right;
+}
+.unit__naming{
+    border-right: 4px solid #19bd9a;
+    padding-right: 50px;
+}
+.unit__text{
+    padding-right: 50px;
+    padding-top: 25px;
+}
+.unit__stat{
+    padding-top: 25px;
+}
+.team__footer{
+    background-image: url(img/team__footer.png);
+    height: 200px;
+    color: white;я
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
