@@ -256,14 +256,20 @@ h2{
 img{
     max-width: 100%;
 }
+<<<<<<< HEAD
 /*
 .gallery__item-big{
+=======
+.gallery__item-whitePackage{
+>>>>>>> 2411454fca73dc36f8c1d5d7d1ee82c050dbb47e
     background-image: url(img/gallery_whitePackage.png);
+    background-size: cover;
     height: 340px;
 }
-.gallery__item-sm{
-    background-image: url(img/gallery_whitePackage.png);
-    height: 240px;
+.gallery__item-blackBottles{
+    background-image: url(img/gallery_blackBottles.png);
+    background-size: cover;
+    height: 200px;
 }
 */
 
