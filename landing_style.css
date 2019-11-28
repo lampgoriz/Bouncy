@@ -238,13 +238,15 @@ h2{
 img{
     max-width: 100%;
 }
-.gallery__item-big{
+.gallery__item-whitePackage{
     background-image: url(img/gallery_whitePackage.png);
+    background-size: cover;
     height: 340px;
 }
-.gallery__item-sm{
-    background-image: url(img/gallery_whitePackage.png);
-    height: 240px;
+.gallery__item-blackBottles{
+    background-image: url(img/gallery_blackBottles.png);
+    background-size: cover;
+    height: 200px;
 }
 
 
