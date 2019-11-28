@@ -234,10 +234,29 @@ h2{
 }
 .gallery__item{
     padding-bottom: 10px;   
+    position: relative;
 }
+.gallery__item:hover{
+    opacity: 0.5;
+}
+.gallery__item-text{
+    visibility: hidden;
+}
+.gallery__item-text:hover{
+    visibility: visible;
+    color: black;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 img{
     max-width: 100%;
 }
+/*
 .gallery__item-big{
     background-image: url(img/gallery_whitePackage.png);
     height: 340px;
@@ -246,6 +265,7 @@ img{
     background-image: url(img/gallery_whitePackage.png);
     height: 240px;
 }
+*/
 
 
 
@@ -269,6 +289,7 @@ bottom:0 */
 }
 .portfolio__footer-text{
     padding-top: 55px;
+    text-align: center;
 }
 .porfolio__button{
     padding-top: 40px;
@@ -304,7 +325,13 @@ bottom:0 */
     height: 200px;
     color: white;я
 }
-
+.our__team-slider{
+    padding-bottom: 100px;
+}
+.team__footer-text{
+    padding-top: 60px;
+    text-align: center;
+}
 
 
 
