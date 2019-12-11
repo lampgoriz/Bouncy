@@ -150,7 +150,6 @@ h2{
     background-size: cover;
     height: 300px;
     width: 25%;
-
 }
 .future__img-item3{
     background-image: url(img/Future_projects_imgBranding.png);
@@ -208,7 +207,6 @@ h2{
 }
 .name{
     padding-top: 30px;
-/*    padding-bottom: 100px;*/
 }
 .bright__grey{
     color: #b2b3b3;
@@ -228,16 +226,32 @@ h2{
 .portfolio__menu-item a{
     color: black;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    
+    border-bottom: 1px solid transparent;  
 }
+/*
+.portfolio__menu-item a::after{
+    content: "";
+    border-bottom: 1px solid #19bd9a;
+    width: 15px;
+}
+*/
 .portfolio__menu-item a:hover{
     color: black;
     text-decoration: none;
     border-bottom: 1px solid #19bd9a;
 }
+
+.gallery__item{
+    position: relative;
+    margin-bottom: 10px;
+}
+.gallery__item:hover .gallery__item-body{
+    opacity: 1;
+/*    cursor: pointer;*/
+    visibility: visible;
+}
 .gallery__item-lg{
-    height: 360px;
+    height: 344px;
     width: 255px;
     background-size: cover;
 }
@@ -246,57 +260,74 @@ h2{
     width: 255px;
     background-size: cover;
 }
-.gallery__item-sm{
+.gallery__item-sml{
+    height: 260px;
+    width: 255px;
+    background-size: cover;
+}
+.gallery__item-sms{
     height: 230px;
     width: 255px;
     background-size: cover;
 }
-.gallery__item{
-    padding-bottom: 10px;   
-    position: relative;
-}
-.gallery__item:hover .gallery__item-body{
-    opacity: 1;
-/*    cursor: pointer;*/
-    visibility: visible;
-}
-.gallery_whitePackage{
-    background: url(img/gallery_whitePackage.png) no-repeat;
-}
 .gallery__item-body{
     opacity: 0;
 }
-.gallery__item-body-img{
+.gallery__item-body-img-lg{
     display: inline-block;
     padding-top: 23%;
     padding-left: 7px;
     cursor: pointer;
 }
-.gallery__text-title{
+.gallery__text-title-lg{
     color: #19bd9a;
     text-align: left;
     padding-top: 30%;
     border-bottom: 2px solid #19bd9a;
     padding-left: 7px;
 }
-.gallery__text{
+.gallery__text-lg{
     text-align: left;
     padding-top: 20%;
     padding-left: 7px;
+}
+.gallery__item-body-img-md{
+    display: inline-block;
+    padding-top: 10%;
+    padding-left: 7px;
+    cursor: pointer;
+}
+.gallery__text-title-md{
+    color: #19bd9a;
+    text-align: left;
+    padding-top: 10%;
+    border-bottom: 2px solid #19bd9a;
+    padding-left: 7px;
+}
+.gallery__text-md{
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 7px;
+}
+.gallery__item-body-img-sm{
+    display: inline-block;
+    padding-top: 5%;
+    padding-left: 7px;
+    cursor: pointer;
+}
+.gallery__text-title-sm{
+    color: #19bd9a;
+    text-align: left;
+    padding-top: 3%;
+    border-bottom: 2px solid #19bd9a;
+    padding-left: 7px;
+}
+.gallery__text-sm{
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 7px;
 
 }
-.gallery__item-whitePackage{
-    background-image: url(img/gallery_whitePackage.png);
-    background-size: cover;
-    height: 340px;
-}
-/*
-.gallery__item-blackBottles{
-    background-image: url(img/gallery_blackBottles.png);
-    background-size: cover;
-    height: 200px;
-}
-*/
 img{
     max-width: 100%;
 }
@@ -399,10 +430,9 @@ img{
 }
 .price__item{
     background: #ffffff;
-/*    box-shadow: 1px 1px 5px black;*/
     margin-right: 60px;
-    padding-bottom: 100px;
-    padding-top: 60px;
+    margin-bottom: 100px;
+    margin-top: 60px;
 }
 .price__item-title{
     font-family: Open Sans;
@@ -419,7 +449,7 @@ img{
 .per__month{
     font-family: Open Sans;
     text-align: center;
-    padding-bottom: 110px;
+    margin-bottom: 110px;
 }
 .price__button{
     background: #19bd9a;
@@ -438,6 +468,20 @@ img{
 .price__text-hover{
     padding-top: 35px;
     line-height: 30px;
+}
+.price__item:hover .price__item-hover {
+/*    opacity: 1;*/
+    display: block;
+}
+
+.price__item-hover{
+    display: none;
+}
+.hover-none{
+    display: block;
+}
+.price__item:hover .hover-none{
+    display: none;
 }
 input{
     outline: none;
@@ -472,10 +516,12 @@ input{
 }
 .contact__item{
     margin-right: 30px;
-    padding-top: 60px;
+    margin-top: 60px;
     margin-bottom: 100px;
+    text-align: center;
 }
 .contact__title{
+    padding-top: 15px;
     text-align: center;
     font-size: 16px;
 }
@@ -484,10 +530,9 @@ input{
     padding-bottom: 30px;
 }
 .contact__input{
-/*    width: 250px*/
     padding-left: 20px;
     margin-right: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 30;
 }
 .contact__input input{
     width: 100%;
@@ -498,7 +543,7 @@ input{
 }
 .comment{
     width: 100%;
-    height: 80px;
+    height: 150px;
     resize: none;
 }
 .contact__submit-bg{
@@ -521,7 +566,18 @@ input{
     cursor: pointer;
 }
 
-
+@media screen and (max-width: 992px){
+    .logo{
+        margin-top: 5px; 
+    }
+    .nav{
+        margin-right: 150px;
+    }
+    .services__circle{
+        padding: 80px -10px;
+    }
+    
+}
 
 
 
